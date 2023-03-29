@@ -11,5 +11,6 @@ class Produto(Base):
     detalhes = Column(String)
     preco = Column(Float)
     disponivel = Column(Boolean)
+    tamanhos = Column(String)
 
 

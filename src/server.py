@@ -24,3 +24,13 @@ def listar_produtos(db: Session = Depends(get_db)):
 
 # uvicorn src.server:app --reload --reload-dir=src
 # https://github.com/rogeriosilva-ifpi/ifpi-tds-20211-backend/blob/main/blx-backend/src/infra/sqlalchemy/config/database.py
+# https://alembic.sqlalchemy.org/en/latest/
+# Comando para inicializar o alembic
+# $ alembic init alembic
+
+# Criar uma nova migração
+# $ alembic revision --autogenerate -m "Inicial"
+
+# Executar migrações
+# $ alembic upgrade head
+
